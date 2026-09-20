@@ -6,15 +6,33 @@
   <meta name="description" content="National Institute for Conservation, Health, and Ecology">
   <title>Niche</title>
   <style>
-    body { margin: 0; padding: 4rem 1.5rem; background: #fff; color: #20392d; font-family: system-ui, sans-serif; line-height: 1.6; }
-    main { max-width: 42rem; margin: 0 auto; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      padding: clamp(1.25rem, 4vw, 3rem);
+      background: #dce3dc;
+      color: #20392d;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0) 65%), url("Figures/bg.png") center / cover no-repeat;
+    }
+    main { max-width: 24rem; }
     h1 { margin: 0 0 1.5rem; }
-    .logo { display: block; width: 100%; height: auto; }
+    .logo { display: block; width: 100%; max-width: 22.5rem; height: auto; }
+    p { margin: 0; width: fit-content; padding: 0.5rem 0.75rem; border-radius: 0.25rem; background: rgba(255, 255, 255, 0.85); }
   </style>
 </head>
 <body>
   <main>
-    <h1><img class="logo" src="Figures/niche_logo.png" width="2142" height="674" alt="NICHE — National Institute for Conservation, Health, and Ecology"></h1>
+    <h1><img class="logo" src="Figures/niche_logo.png" width="1297" height="374" alt="NICHE — National Institute for Conservation, Health, and Ecology"></h1>
     <p>Our website is under construction.</p>
   </main>
 </body>
