@@ -1,2 +1,2 @@
 # niche-website
-Public website for the Nature Institute for Conservation, Health, and Ecology (Niche).
+Public website for the National Institute for Conservation, Health, and Ecology (Niche).
